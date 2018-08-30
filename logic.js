@@ -15,7 +15,7 @@ for(let i = 0; i<nextBtn.length; i++){
 // take to next page
 function takeToNextPage(e){
   // console.log(e.target);
-  let currentPageId = e.target.parentElement.id;
+  let currentPageId = e.target.parentElement.id || e.target.parentElement.parentElement.id;
   let nextPageId;
 
   currentPage = '.page'+currentPageId;

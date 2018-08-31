@@ -15,6 +15,20 @@ for(let i = 0; i<nextBtn.length; i++){
 // take to next page
 function takeToNextPage(e){
   // console.log(e.target);
+
+ //  let target = e.target.id;
+ //  if(target){
+ //     switch(target){
+ //         case "door1":
+ //
+ //            break;
+ //         case "door2":
+ //            break;
+ //         case "door3":
+ //            break;
+ //     }
+ // }
+
   let currentPageId = e.target.parentElement.id || e.target.parentElement.parentElement.id;
   let nextPageId;
 

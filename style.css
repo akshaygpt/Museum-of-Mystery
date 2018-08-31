@@ -47,7 +47,7 @@
 .nextBtnText{
   display: inline-block;
   font-size: 4rem;
-  padding-right: 3rem;
+  padding-right: 2rem;
   vertical-align: middle;
 }
 .nextBtn{
@@ -85,4 +85,18 @@
   position: relative;
   display: inline-block;
   padding-top: 20vh;
+}
+.cardSets{
+   padding-top: 20vh;
+   width: 100%;
+}
+.cardSets > img {
+   width: 80%;
+}
+.next3 > .nextBtn img{
+   position: relative;
+   bottom: -45px;
+   padding: 10px;
+   width: 40px;
+   cursor: pointer;
 }

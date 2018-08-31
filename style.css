@@ -47,7 +47,7 @@
 .nextBtnText{
   display: inline-block;
   font-size: 4rem;
-  padding-right: 2rem;
+  padding-right: 1rem;
   vertical-align: middle;
 }
 .nextBtn{
@@ -98,5 +98,48 @@
    bottom: -45px;
    padding: 10px;
    width: 40px;
+   cursor: pointer;
+}
+.webcamCircle{
+   padding-top: 10vh;
+}
+.webcamCircle video{
+   border-radius: 50%;
+   width: 36vw;
+   height: auto;
+}
+.next4{
+   top: 20vh;
+   width: 100%;
+}
+.next4 > .nextBtn img{
+   position: relative;
+   bottom: -45px;
+   padding: 10px;
+   width: 40px;
+   cursor: pointer;
+}
+.globeText{
+   font-size: 3rem;
+}
+.cardLost{
+   font-size: 3rem;
+   padding-top: 20vh;
+}
+.cardSetsNew{
+   padding-top: 10vh;
+   width: 100%;
+}
+.cardSetsNew > img {
+   width: 80%;
+}
+.playAgain{
+   font-size: 2rem;
+}
+.next5 > .nextBtn img{
+   position: relative;
+   bottom: -40px;
+   padding: 10px;
+   width: 30px;
    cursor: pointer;
 }

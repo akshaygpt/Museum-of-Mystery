@@ -1,12 +1,8 @@
 var x = document.getElementById('bg-audio');
 
-function playMusic() {
-  x.play();
+window.onload = function(){
+   x.play();
 }
-function pauseMusic() {
-  x.pause();
-}
-
 
 // webcam video
 navigator.getMedia = (navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia);

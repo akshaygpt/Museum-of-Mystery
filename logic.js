@@ -2,8 +2,9 @@
 let pages = document.getElementById('pageContainer').children;
 for(let i = 1; i< pages.length; i++){
   pages[i].style.display = 'none';
-  // pages[i].style.opacity = 0;
 }
+
+var x = document.getElementById('bg-audio');
 
 // next btn event listener
 let nextBtn = document.querySelectorAll('img');
@@ -14,27 +15,16 @@ for(let i = 0; i<nextBtn.length; i++){
 
 // take to next page
 function takeToNextPage(e){
-  // console.log(e.target);
-
- //  let target = e.target.id;
- //  if(target){
- //     switch(target){
- //         case "door1":
- //
- //            break;
- //         case "door2":
- //            break;
- //         case "door3":
- //            break;
- //     }
- // }
 
   let currentPageId = e.target.parentElement.id || e.target.parentElement.parentElement.id;
+
   let nextPageId;
 
   currentPage = '.page'+currentPageId;
 
   if(currentPageId === '5'){
+     // x.pause();
+     x.currentTime = 0;
     nextPageId = '1';
   } else {
     nextPageId = String(Number(currentPageId) + 1);

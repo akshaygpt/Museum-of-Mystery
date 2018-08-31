@@ -16,18 +16,11 @@
   </head>
   <body>
 
-    <!-- <audio id="bg-audio">
-      <source src="data/bg-audio.mp3" type="audio/mpeg">
-      <source src="data/bg-audio.ogg" type="audio/ogg">
+    <audio id="bg-audio">
+      <source src="assets/bg-audio.mp3" type="audio/mpeg">
+      <source src="assets/bg-audio.ogg" type="audio/ogg">
       Your browser doesn't support the audio.
     </audio>
-
-    <button onclick="playMusic()" type="button">Play</button>
-    <button onclick="pauseMusic()" type="button">Pause</button>
-
-    <div class="webcamCircle">
-      <video></video>
-    </div> -->
 
     <div class="pages" id="pageContainer">
 
@@ -70,27 +63,34 @@
       </div>
 
       <div class="page4 page">
-        page 4
-        <div class="nextBtnContainer">
-          <div class="nextBtnText">some text</div>
+         <div class="webcamCircle">
+           <video></video>
+         </div>
+        <div class="nextBtnContainer next4">
+          <div class="nextBtnText globeText">Think of a card, clap your hands twice and press </div>
           <div class="nextBtn" id="4">
             <img src="assets/nextbtn.png" alt="Next">
           </div>
         </div>
       </div>
+
+
       <div class="page5 page">
-        page 5
-        <div class="nextBtnContainer">
-          <div class="nextBtnText">last page</div>
+        <div class="cardLost">
+            Your card is lost, come and find it in the Museum of Mystery
+        </div>
+        <div class="cardSetsNew">
+           <img src="assets/card3.png" alt="cards">
+        </div>
+        <div class="nextBtnContainer next5">
+          <div class="nextBtnText playAgain">To play again, press</div>
           <div class="nextBtn" id="5">
             <img src="assets/nextbtn.png" alt="Next">
           </div>
         </div>
-      </div>
     </div>
 
-
-    <script src="p5p5.js"></script>
+    <script src="mediaLogic.js"></script>
     <script src="logic.js"></script>
   </body>
 </html>

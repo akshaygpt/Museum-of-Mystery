@@ -1,7 +1,11 @@
 var x = document.getElementById('bg-audio');
 
 window.onload = function(){
-   x.play();
+  try {
+    x.play();
+  } catch(err) {
+    console.log('Error occured:', err)
+  }
 }
 
 // webcam video
